@@ -1,0 +1,10 @@
+baseURL = "https://rsbteetime.github.io"
+languageCode = 'en-us'
+theme = "anatole"
+enableEmoji = true
+
+ [params]
+title = 'RSB TE&E Time'
+author = "rsbteetime"
+description = "A blog about what we talked about in TE&E Time"
+
