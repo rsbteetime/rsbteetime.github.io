@@ -3,7 +3,7 @@ title: "Getting rich slowly notes from TE&E Time at RSB"
 subtitle: "From a discussion led by Rob Lanfear 'How to get rich slowly: a bunch of things about money I wish someone had told me when I was a grad student'"
 date: 2021-10-06
 draft: false
-tags: [Postgraduate, ANU]
+tags: [Postgraduate, ANU, finance]
 thumbnail: "images/20211006_rich_slowly/poll.jpg"
 ---
 
@@ -11,7 +11,8 @@ thumbnail: "images/20211006_rich_slowly/poll.jpg"
 
 We started our TE&E Time talk today with a silly poll...
 <!-- static\images\20211006_rich_slowly\poll.jpg -->
-<!-- {{< figure src="/poll.jpg" title="Fun poll at the beginning of our TE&E Time today" >}}? -->
+{{< figure src="poll.jpg" title="Fun poll at the beginning of our TE&E Time today" >}}
+
 
 
 Our topic of discussion today is "How to get rich slowly: a bunch of things about money I wish someone had told me when I was a grad student." Led by Rob Lanfear
@@ -46,10 +47,14 @@ These are the notes I took quickly as the discussion went along, they might not 
 #### How to start investing outside Super:
 
 - Using stock brokerage or trading apps
-  - CommSec (of Commonwealth Bank)
+  - CommSec (of Commonwealth Bank) and CommSec Pocket
   - Nabtrade (National Australia Bank)
-  - [Stake](https://hellostake.com/au) - offer low fees
-  - [Spaceship](https://spaceship.app.link/refer?code=S8HUXS61XG) - low fees and trade in diversified portfolio.
+  - [Stake](https://hellostake.com/au)
+  - [Spaceship](https://spaceship.app.link/refer?code=S8HUXS61XG)
+  - Superhero
+
+#### How often should I invest? 
+You can use this free calculator that optimise investment based on interest and expected return https://investcalc.github.io/ 
 
 #### Votatility and diversification
 
