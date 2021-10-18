@@ -3,16 +3,20 @@ languageCode = 'en-us'
 theme = "anatole"
 enableEmoji = true
 
- [params]
+[params]
 title = 'RSB TE&E Time'
 author = "rsbteetime"
 description = "A blog about what we talked about in TE&E Time"
 profilePicture = "images/profile_pic.png"
 
+# Date formatting
 singleDateFormat = "Mon, 2 Jan, 2006"
 indexDateFormat = "Mon, 2 Jan, 2006"
 listDateFormat = "2 Jan"
 contentratio = 0.7
+
+# Highlight post on the home page
+mainSections = ["post"]
 
 # Fonts
 googleFonts = [
@@ -40,3 +44,9 @@ use = "katex"  # options: "katex", "mathjax". default is "katex".
   weight = 200
   identifier = "posts"
   url = "/post/"
+
+  [[menu.main]]
+  name = "About"
+  weight = 300
+  identifier = "about"
+  url = "/about/"
