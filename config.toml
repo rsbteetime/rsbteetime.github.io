@@ -7,4 +7,36 @@ enableEmoji = true
 title = 'RSB TE&E Time'
 author = "rsbteetime"
 description = "A blog about what we talked about in TE&E Time"
+profilePicture = "images/profile_pic.png"
 
+singleDateFormat = "Mon, 2 Jan, 2006"
+indexDateFormat = "Mon, 2 Jan, 2006"
+listDateFormat = "2 Jan"
+contentratio = 0.7
+
+# Fonts
+googleFonts = [
+  "Indie+Flower",
+  "Roboto:ital,wght@0,100;0,400;0,700;1,400"
+]
+
+## Math settings
+[params.math]
+enable = false  # options: true, false. Enable math support globally, default: false. You can always enable math on per page.
+use = "katex"  # options: "katex", "mathjax". default is "katex".
+
+
+## NAVIGATION CONTENT
+[menu]
+
+  [[menu.main]]
+  name = "Home"
+  identifier = "home"
+  weight = 100
+  url = "/"
+
+  [[menu.main]]
+  name = "Posts"
+  weight = 200
+  identifier = "posts"
+  url = "/post/"
