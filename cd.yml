@@ -1,0 +1,41 @@
+name: Build and Deploy Site
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy-site:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2
+        with:
+          submodules: true
+          fetch-depth: 0           # only fetch the newest version, so quicker
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: 'latest'
+
+      - name: Build site with Hugo  # Run hugo build command
+        run: hugo --minify          # Compresses the file to reduce space use
+
+      - name: Check HTML            # Checks the html
+        uses: chabad360/htmlproofer@master
+        with:
+          directory: "./public"
+          arguments: --only-4xx --check-favicon --check-html --assume-extension --empty-alt-ignore --disable-external
+        continue-on-error: true     
+
+      - name: Deploy to GitHub Pages # Publish to github page 
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main' 
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }} # Token is automatically generated
+          publish_dir: ./public      # html files are in "PUBLIC folder"
