@@ -7,5 +7,3 @@ author: "Putter Tiatragul"
 ---
 
 This is ANU RSB EE (Australian National University Research School of Biology Ecology & Evolution) TE&E Time! 
-
-
